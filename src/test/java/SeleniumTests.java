@@ -17,11 +17,12 @@ import java.util.Map;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SeleniumTests {
-    private static final String username = "";
-    private static final String password = "";
+    private static final String username = "Starlight1313";
+    private static final String password = "kNOpKA123";
     private static final String invalidUsername = "asdfeadw";
     private static final String invalidPassword = "dsfrgwef";
-    private static final String keyword = "spelunky";
+    private static final String keywordTrue = "spelunky";
+    private static final String keywordFalse = "the witness";
 
     private static final long timeOutInSeconds = 10;
 
@@ -48,10 +49,10 @@ public class SeleniumTests {
     public void bTestSearch() {
         HomePage homePage = new HomePage(driver, waiter);
         homePage.login(username, password);
-        List<String> searchResults = homePage.search(keyword).getTitles();
+        List<String> searchResults = homePage.search(keywordFalse).getTitles();
         boolean flag = true;
         for (String searchResult : searchResults) {
-            if (!searchResult.toLowerCase().contains(keyword))
+            if (!searchResult.toLowerCase().contains(keywordFalse))
                 flag = false;
         }
 

@@ -59,6 +59,7 @@ public class HomePage {
     }
 
     public List<String> getTitles(){
+        waiter.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".row4.med.tLeft.t-title-col")));
         List<WebElement> titleDivs = driver.findElements(By.cssSelector(".row4.med.tLeft.t-title-col"));
         List<String> titles = new ArrayList<String>();
         for (WebElement element : titleDivs){
