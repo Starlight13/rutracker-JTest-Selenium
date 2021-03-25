@@ -17,8 +17,8 @@ import java.util.Map;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SeleniumTests {
-    private static final String username = "Starlight1313";
-    private static final String password = "kNOpKA123";
+    private static final String username = "";
+    private static final String password = "";
     private static final String invalidUsername = "asdfeadw";
     private static final String invalidPassword = "dsfrgwef";
     private static final String keyword = "spelunky";
