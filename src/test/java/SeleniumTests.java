@@ -48,10 +48,10 @@ public class SeleniumTests {
     public void bTestSearch() {
         HomePage homePage = new HomePage(driver, waiter);
         homePage.login(username, password);
-        List<String> searchResults = homePage.search(keywordFalse).getTitles();
+        List<String> searchResults = homePage.search(keywordTrue).getTitles();
         boolean flag = true;
         for (String searchResult : searchResults) {
-            if (!searchResult.toLowerCase().contains(keywordFalse))
+            if (!searchResult.toLowerCase().contains(keywordTrue))
                 flag = false;
         }
 
