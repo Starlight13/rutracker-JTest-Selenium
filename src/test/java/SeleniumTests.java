@@ -14,7 +14,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SeleniumTests {
     private static final String username = "Starlight1313";

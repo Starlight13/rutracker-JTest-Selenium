@@ -15,8 +15,8 @@ public class HomePage {
     private WebDriverWait waiter;
 
     private By byLoginTab = By.xpath("/html/body/div[4]/div[1]/div[1]/div[3]/table/tbody/tr/td/div/a[2]");
-    private By byUsernameInput = By.id("top-login-uname");
-    private By byPasswordInput = By.id("top-login-pwd");
+    private By byUsernameInput = By.name("login_username");
+    private By byPasswordInput = By.name("login_password");
     private By byLoginButton = By.id("top-login-btn");
     private By byUsername = By.id("logged-in-username");
     private By bySearchBar = By.id("search-text");
